@@ -13,12 +13,11 @@
   }
 
 #header{
-    position: fixed;
     z-index: 999;
     width: 100%;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     margin-left:0px;
     overflow-x:auto;
     overflow-y: auto;
@@ -63,7 +62,7 @@ nav a{
 }
 
 #main-container{
-    padding-top: 130px;
+    padding-top: 10px;
     min-height: calc(100vh - 70px)
 }
 
@@ -90,6 +89,18 @@ h1, h2, h3, p{
     margin-bottom: 20px;
 }
 
+#logo{
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height:90px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+}
 #contact-form ul {
     margin-bottom: 20px;
 }
@@ -172,7 +183,7 @@ h2, h3{
     border-bottom: 0;
 }
 
-@media screen and (max-width: 980px){
+/* @media only screen and (max-width: 980px){
     .main-section{
     float: left;
     width: 50%;
@@ -185,11 +196,11 @@ h2, h3{
     background: #ffffff;
     border: 1px solid #777777;
     }
-}
+} */
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .main-section{
-        float: left;
+        float: none;
         width: 100%;
         max-width: 960px;
         padding: 30px;
@@ -200,9 +211,18 @@ h2, h3{
         background: #ffffff;
         border: 1px solid #777777;
     }
+    nav{
+        margin-right: 50px;
+    }
+    #contact-form{
+        text-align: left;
+    }
+    .portfolio{
+        margin-top: 40px;
+    }
 }
 
-@media screen and (max-width: 640px){
+@media only screen and (max-width: 640px){
 
     body{
         float: middle;
@@ -238,5 +258,11 @@ h2, h3{
     .container{
         width: 100%;
         text-align: center;
+    }
+    #main-container{
+        padding-top:10px;
+    }
+    .portfolio{
+        margin-top: 40px;
     }
 }
